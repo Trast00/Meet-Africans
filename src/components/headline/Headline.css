@@ -1,0 +1,48 @@
+.headline {
+  background-image: url('../../assets/backgrounds/background_home_mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+}
+
+.logo {
+  padding: 8px;
+  align-items: center;
+  color: white;
+}
+
+.logo img {
+  width: 60px;
+  height: auto;
+}
+
+.logo h1 {
+  font-weight: 500;
+}
+
+.headline-wrapper {
+  text-align: start;
+  color: white;
+  padding: 16px;
+}
+
+.headline-wrapper img {
+  display: none;
+}
+
+.headline-wrapper main {
+  color: white;
+  max-width: 80%;
+}
+
+.headline-wrapper main h2 {
+  font-size: 3rem;
+  color: white;
+  opacity: 0.8;
+}
+
+.headline-wrapper main p {
+  font-size: 1.8rem;
+  opacity: 0.7;
+  margin-bottom: 60px;
+}

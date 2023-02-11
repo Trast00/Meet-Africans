@@ -5,6 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --color-actions: #FFC23C;
+  --color-purple: #8105D8;
+  --color-purple-ligth: #C48AEC;
+  --color-pink: #CF0AD1;
+  --color-pink-ligth: #EA90EB;
+  --color-text: #343333;
 }
 
 code {

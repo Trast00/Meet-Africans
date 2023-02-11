@@ -1,3 +1,44 @@
 .App {
   text-align: center;
 }
+
+a {
+  text-decoration: none;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.max-width {
+  width: 100%;
+  min-height: 300px;
+}
+
+.no-styling {
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+}
+
+.btn-action {
+  padding: 8px 32px 8px 32px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--color-text);
+  background-color: var(--color-actions);
+}
