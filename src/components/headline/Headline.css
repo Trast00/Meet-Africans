@@ -2,7 +2,7 @@
   background-image: url('../../assets/backgrounds/background_home_mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 600px;
+  min-height: 650px;
 }
 
 .logo {
@@ -17,6 +17,7 @@
 }
 
 .logo h1 {
+  margin-left: 12px;
   font-weight: 500;
 }
 
@@ -38,7 +39,9 @@
 .headline-wrapper main h2 {
   font-size: 3rem;
   color: white;
-  opacity: 0.8;
+  opacity: 0.9;
+  margin-top: 52px;
+  margin-bottom: 16px;
 }
 
 .headline-wrapper main p {
