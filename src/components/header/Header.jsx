@@ -15,8 +15,8 @@ const Header = () => {
         <RiCloseFill className='icons-menu'
         onClick={(e)=>(openMenu(false))}/>
         <li>Contact</li>
-        <li>About Me</li>
-        <li>Sign IN</li>
+        <li>About</li>
+        <li>Sign In</li>
       </ul>
     </header>
   )
