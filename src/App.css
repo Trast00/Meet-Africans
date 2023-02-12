@@ -49,3 +49,9 @@ a {
   color: var(--color-text);
   background-color: var(--color-actions);
 }
+
+.section-title {
+  font-size: 3rem;
+  color: var(--color-text);
+  margin: 24px;
+}
