@@ -27,3 +27,21 @@
   font-weight: 500;
   margin-left: 12px;
 }
+
+@media screen and (min-width:480px) {
+  .interests {
+    flex-direction: row-reverse;
+  }
+
+  .interests .section-title {
+    width: 40%;
+  }
+
+  .list-interests {
+    width: 50%;
+    padding: 24px;
+    display: grid;
+    text-align: start;
+    grid-template-columns: 1fr 1fr;
+  }
+}
