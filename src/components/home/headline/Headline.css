@@ -2,7 +2,6 @@
   background-image: url('../../../assets/backgrounds/background_home_mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 650px;
 }
 
 .logo {
@@ -24,7 +23,7 @@
 .headline-wrapper {
   text-align: start;
   color: white;
-  padding: 16px;
+  padding-left: 16px;
 }
 
 .headline-wrapper img {
@@ -33,7 +32,8 @@
 
 .headline-wrapper main {
   color: white;
-  max-width: 80%;
+  max-width: clamp(250px, 400px, 80%);
+  padding-bottom: 35px;
 }
 
 .headline-wrapper main h2 {
@@ -48,4 +48,24 @@
   font-size: 1.8rem;
   opacity: 0.7;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width:480px) {
+  .headline {
+    background-image: url('../../../assets/backgrounds/background_home_desktop.png');
+  }
+}
+
+@media screen and (min-width:780px) {
+  .headline-wrapper img {
+    display: block;
+    width: clamp(200px, 40%, 600px);
+    transition-duration: 300ms;
+  }
+
+  .headline-wrapper main {
+    color: white;
+    max-width: 50%;
+  }
+
 }
