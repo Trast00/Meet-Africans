@@ -1,7 +1,7 @@
 .dowload {
   flex-direction: column-reverse;
   flex-wrap: wrap;
-  padding-bottom: 50px;
+  margin-top: 80px;
 }
 
 .dowload section {

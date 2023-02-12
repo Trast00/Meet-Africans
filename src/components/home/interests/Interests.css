@@ -1,0 +1,29 @@
+.interests {
+  margin-top: 80px;
+  flex-wrap: wrap;
+}
+
+.list-interests {
+  width: 100%;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.interest {
+  justify-content: flex-start;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding-left: 40px;
+}
+
+.interest img {
+  width: 45px;
+  height: 45px;
+}
+
+.interest p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: 12px;
+}

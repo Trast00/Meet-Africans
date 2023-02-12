@@ -4,6 +4,7 @@
   background-image: url('../../assets/backgrounds/footer_mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 80px;
 }
 
 .footer .logo-wrapper {
