@@ -30,3 +30,11 @@
 .footer .wrapper p {
   opacity: 0.8;
 }
+
+@media screen and (min-width:480px) {
+  .footer {
+    padding: 24px;
+    background-image: url('../../assets/backgrounds/background_footer_desktop.png');
+
+  }
+}
