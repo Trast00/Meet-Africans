@@ -10,7 +10,7 @@
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 12px;
-  width: clamp(250px, 300px, 350px);
+  width: clamp(200px, 200px, 350px);
   aspect-ratio: 3/4;
   border: 3px solid var(--color-purple-ligth);
   border-radius: 8px;
