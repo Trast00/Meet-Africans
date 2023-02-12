@@ -1,6 +1,6 @@
 import React from 'react'
-import logoImg from '../../assets/images/logo_white.png'
-import headlineProfile from '../../assets/images/headline_profile.png'
+import logoImg from '../../../assets/images/logo_white.png'
+import headlineProfile from '../../../assets/images/headline_profile.png'
 import { Link } from 'react-router-dom';
 import './Headline.css'
 

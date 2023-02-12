@@ -12,6 +12,7 @@
 }
 
 .listNav {
+  opacity: 0;
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -40,5 +41,7 @@
 }
 
 .listNav.active {
+  opacity: 1;
+  transition-duration: 400ms;
   transform: translateX(-100vw);
 }
