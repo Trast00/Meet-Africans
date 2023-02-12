@@ -1,0 +1,28 @@
+.dowload {
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+
+.dowload section {
+  width: 100%;
+  min-height: 300px;
+}
+
+.dowload section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 24px;
+}
+
+.dowload section img {
+  width: 80px;
+  height: 80px;
+  opacity: 0.7;
+  margin-bottom: 16px;
+}
+
+.dowload section p {
+  color: var(--color-text);
+  text-decoration: underline;
+  margin-bottom: 12px;
+}
