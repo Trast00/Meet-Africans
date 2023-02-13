@@ -11,12 +11,11 @@ const Header = () => {
       <HiMenu className='icons-menu'
       onClick={(e)=>(openMenu(true))}/>
       <ul className={'no-styling column listNav'+ (opened?" active": "")}>
-        
         <RiCloseFill className='icons-menu'
         onClick={(e)=>(openMenu(false))}/>
         <li><NavLink to="/contact" className="no-styling">Contact</NavLink></li>
         <li><NavLink to="/about" className="no-styling">About</NavLink></li>
-        <li><NavLink to="/register" className="no-styling">Sign In</NavLink></li>
+        <li><NavLink to="/auth" className="no-styling">Sign In</NavLink></li>
       </ul>
     </header>
   )
