@@ -1,0 +1,25 @@
+header {
+  flex-wrap: wrap;
+}
+
+header .logo {
+  width: 100%;
+  min-width: 250px;
+  justify-content: flex-start;
+  padding-left: 12px;
+  color: var(--color-pink);
+}
+
+header h2 {
+  width: 100%;
+  min-width: 250px;
+  justify-content: flex-end;
+  color: var(--color-pink);
+  font-size: 2.5rem;
+  text-align: end;
+  padding-right: 24px;
+}
+
+main {
+  margin-top: 40px;
+}
