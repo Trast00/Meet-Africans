@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import { HiMenu } from "react-icons/hi";
 import { RiCloseFill } from "react-icons/ri";
-
+import { NavLink } from 'react-router-dom';
 import './Header.css'
 
-const listNav = document.getElementById('listNav')
 const Header = () => {
   const [opened, openMenu] = useState(false)
   return (
@@ -12,11 +11,12 @@ const Header = () => {
       <HiMenu className='icons-menu'
       onClick={(e)=>(openMenu(true))}/>
       <ul className={'no-styling column listNav'+ (opened?" active": "")}>
+        
         <RiCloseFill className='icons-menu'
         onClick={(e)=>(openMenu(false))}/>
-        <li>Contact</li>
-        <li>About</li>
-        <li>Sign In</li>
+        <li><NavLink to="/contact" className="no-styling">Contact</NavLink></li>
+        <li><NavLink to="/about" className="no-styling">About</NavLink></li>
+        <li><NavLink to="/register" className="no-styling">Sign In</NavLink></li>
       </ul>
     </header>
   )

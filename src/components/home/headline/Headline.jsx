@@ -18,11 +18,10 @@ const Headline = () => {
           <p>find hundreds of friends and 
             potentiel partner around 
             all the west Africa
-          </p>
-          
-          <Link to="/" className="no-style btn-action">Join US!</Link>
-
+          </p>  
+          <Link to="/register" className="no-style btn-action">Join US!</Link>
         </main>
+
         <img src={headlineProfile} alt="Profile smiling girl" />
       </div>
     </div>

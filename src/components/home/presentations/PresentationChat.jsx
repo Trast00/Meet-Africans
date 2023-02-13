@@ -22,7 +22,7 @@ const PresentationChat = () => {
           <div className="column wrapper">
             <p>Finally! That's great!</p>
           </div>
-          <img src={profileGirl} alt="random girl image profile" />
+          <img src={profileGirl} alt="random girl profile" />
         </li>
       </ul>
     </div>

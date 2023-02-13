@@ -28,7 +28,7 @@
   margin-left: 12px;
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width:620px) {
   .interests {
     flex-direction: row-reverse;
   }
@@ -44,4 +44,9 @@
     text-align: start;
     grid-template-columns: 1fr 1fr;
   }
+
+  .interest {
+    padding-left: 0;
+  }
 }
+
