@@ -1,0 +1,40 @@
+.footer {
+  width: 100%;
+  color: white;
+  background-image: url('../../assets/backgrounds/footer_mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 80px;
+}
+
+.footer .logo-wrapper {
+  width: 30%;
+}
+
+.footer .logo-wrapper img {
+  width: 60px;
+  height: 60px;
+}
+
+.footer .wrapper {
+  width: 70%;
+  padding: 16px;
+  justify-content: flex-start;
+  text-align: start;
+}
+
+.footer .wrapper h3 {
+  font-size: 1.4rem;
+}
+
+.footer .wrapper p {
+  opacity: 0.8;
+}
+
+@media screen and (min-width:480px) {
+  .footer {
+    padding: 24px;
+    background-image: url('../../assets/backgrounds/background_footer_desktop.png');
+
+  }
+}

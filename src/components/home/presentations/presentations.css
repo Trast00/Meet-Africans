@@ -1,0 +1,60 @@
+.presentation-chat {
+  margin-top: 80px;
+}
+
+.chats {
+  flex-wrap: wrap;
+  color: var(--color-text);
+  padding: 24px;
+}
+
+.chats p {
+  text-align: start;
+  width: fit-content;
+  color: white;
+  padding: 6px 8px 12px 8px;
+  margin-top: 8px;
+  background-color: var(--color-pink-ligth);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.chat {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.chats .wrapper {
+  flex: 2;
+  margin: 12px;
+}
+
+.chats .my-messages .wrapper {
+  align-items: flex-start;
+}
+
+.chats .friend-messages .wrapper {
+  align-items: flex-end;
+}
+
+.chats .friend-messages .wrapper p {
+  text-align: end;
+  background-color: var(--color-purple);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 0;
+}
+
+.chat img {
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  border: 2px solid var(--color-pink-ligth);
+}
+
+@media screen and (min-width:480px) {
+  .presentation-chat {
+    display: flex;
+    
+  }
+}
