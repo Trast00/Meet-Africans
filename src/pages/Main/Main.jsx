@@ -5,11 +5,12 @@ import ListFriends from '../../components/main/ListFriends/ListFriends'
 import ListUsers from '../../components/main/ListUsers/ListUsers'
 import NavBarMain from '../../components/main/NavBarMain/NavBarMain'
 import Profile from '../../components/main/Profile/Profile'
+import './main.css'
 
 const Main = () => {
   return (
-    <div className='main'>
-      <main className="row wrapper">
+    <div className='flex-center main'>
+      <main className="column wrapper">
         <NavBarMain />
         <div className='main-side'>
           <ListFriends />

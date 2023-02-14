@@ -4,6 +4,7 @@
   background: url('../../assets/backgrounds/background_home_desktop.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .auth .wrapper {
@@ -45,7 +46,7 @@ header h2 {
   padding-left: 12px;
 }
 
-main {
+.auth main {
   margin-top: 10px;
 }
 
