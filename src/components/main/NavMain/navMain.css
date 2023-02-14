@@ -1,0 +1,32 @@
+.navMain {
+  padding: 4px;
+  border-right: 1px solid #d3d3d3;
+  justify-content: space-between;
+}
+
+.navMain img {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #d3d3d3;
+  border-radius: 21px;
+}
+
+.navMain .icons {
+  font-size: 1.2rem;
+  color: #8b8a8a;
+  margin-left: 12px;
+  margin-right: 12px;
+} 
+
+@media screen and (min-width:480px) {
+  .navMain { 
+    flex-direction: column;
+  }
+  .navMain .list-icons {
+    flex-direction: column;
+  }
+  .navMain .icons {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+}
