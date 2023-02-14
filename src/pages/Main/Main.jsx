@@ -16,10 +16,9 @@ const Main = () => {
           {/* <Profile /> */}
           <ListFriends />
         </div>
-        <div className='main-mid'>
+        <div className='desktop-only main-mid'>
           <ListUsers />
-          <ListChats />
-          <DetailInfo />
+          {/*<ListChats /> <DetailInfo />*/}
         </div>
       </main>
     </div>

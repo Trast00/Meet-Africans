@@ -1,18 +1,23 @@
 .navMain {
   padding: 4px;
-  border-right: 1px solid #d3d3d3;
   justify-content: space-between;
+  border-bottom: 1px solid #d3d3d3;
 }
 
 .navMain img {
-  width: 32px;
-  height: 32px;
+  width: 42px;
+  height: 42px;
   border: 1px solid #d3d3d3;
-  border-radius: 21px;
+  border-radius: 50px;
+}
+
+.navMain .list-icons {
+  flex: 1;
+  justify-content: space-evenly;
 }
 
 .navMain .icons {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #8b8a8a;
   margin-left: 12px;
   margin-right: 12px;
@@ -21,11 +26,21 @@
 @media screen and (min-width:480px) {
   .navMain { 
     flex-direction: column;
+    border-bottom: none;
+    border-right: 1px solid #d3d3d3;
   }
   .navMain .list-icons {
     flex-direction: column;
+    flex: 0;
   }
+
+  .navMain img {
+    width: 32px;
+    height: 32px;
+  }
+
   .navMain .icons {
+    font-size: 1.2rem;
     margin-top: 12px;
     margin-bottom: 12px;
   }
