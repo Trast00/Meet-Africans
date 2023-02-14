@@ -1,4 +1,4 @@
-export const listFriends = [
+export const listFriendsTest = [
     {
       name: "Trast00",
       idChat: "testChatID",
@@ -26,4 +26,61 @@ export const listFriends = [
       nbrNewMessage: 0,
       connected: false
     }
+]
+
+export const listUsersTest = [
+  {
+    data: {
+      id: "testID1",
+      nom: "Trast01",
+      imgProfileUrl: "",
+      language: "Français",
+      localisation: "Mali",
+      age: 18,
+      phone: "+22394369704",
+      prenom: "",
+      relation: "Marriage",
+      sexe: "Male",
+    },
+    contact: {
+      gmail: "testest@gmail.com",
+      messenger: "",
+      whatsapp: "",
+    },
+    info: {
+      bio: "My biographie 1",
+    },
+    partner: {
+      age:"18-33",
+      relation: "Marriage",
+      sexe: "Homme / Femme"
+    }
+  },
+  {
+    data: {
+      id: "testID2",
+      nom: "Trast02",
+      imgProfileUrl: "",
+      language: "Français",
+      localisation: "",
+      age: 18,
+      phone: "+22394369704",
+      prenom: "",
+      relation: "Amitie",
+      sexe: "Male",
+    },
+    contact: {
+      gmail: "t2estest@gmail.com",
+      messenger: "",
+      whatsapp: "",
+    },
+    info: {
+      bio: "My biographie 2",
+    },
+    partner: {
+      age:"18-33",
+      relation: "Marriage",
+      sexe: "Femme"
+    }
+  },
 ]

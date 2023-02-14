@@ -27,12 +27,12 @@
 }
 
 .listfriends .description-wrapper h4 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 .listfriends .description-wrapper p {
-  margin-top: 6px;
+  margin-top: 4px;
   font-size: 0.8rem;
 }
 

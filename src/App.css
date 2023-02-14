@@ -81,6 +81,18 @@ a {
   display: none;
 }
 
+.large-screen-only {
+  display: none;
+}
+
 @media screen and (min-width:480px) {
-  
+  .desktop-only {
+    display: block;
+  }
+}
+
+@media screen and (min-width:780px) {
+  .large-screen-only {
+    display: block;
+  }
 }

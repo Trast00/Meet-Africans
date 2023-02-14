@@ -12,7 +12,6 @@ const Friend = (props) => {
     date,
     connected 
   } = props.friend;
-  
   return (
     <div className='row friend'>
       <div className='img-wrapper'>
