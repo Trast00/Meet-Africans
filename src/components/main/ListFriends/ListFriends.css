@@ -1,0 +1,40 @@
+.listfriends {
+  width: 240px;
+  height: 100%;
+  background-color: white;
+  text-align: start;
+}
+
+.listfriends .friend {
+  padding: 8px;
+}
+
+.listfriends .friend:hover {
+  background-color: #f3f3f3;
+}
+
+.listfriends .friend img {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: white;
+  margin-right: 5px;
+}
+
+.listfriends .description-wrapper {
+  width: 80%;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.listfriends .description-wrapper h4 {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.listfriends .description-wrapper p {
+  font-size: 0.6rem;
+}
+
+.listfriends .info-wrapper {
+  width: 25px;
+}
