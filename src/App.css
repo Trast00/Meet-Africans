@@ -23,6 +23,11 @@ a {
   display: flex;
 }
 
+.reversed-row {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .column {
   display: flex;
   flex-direction: column;
@@ -54,4 +59,20 @@ a {
   font-size: 3rem;
   color: var(--color-text);
   margin: 24px;
+}
+
+.input-default {
+  font-size: 1.1rem;
+  width: 300px;
+  padding: 12px 24px 12px 24px;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+}
+
+.input-default:valid {
+  outline-color: var(--color-success);
+}
+
+.error {
+  color: var(--color-error);
 }

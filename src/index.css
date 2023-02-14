@@ -12,6 +12,8 @@ body {
   --color-pink: #CF0AD1;
   --color-pink-ligth: #EA90EB;
   --color-text: #343333;
+  --color-error: #FF4F4F;
+  --color-success: #4FDA9E;
 }
 
 code {
