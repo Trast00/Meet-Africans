@@ -50,6 +50,10 @@
   margin-bottom: 60px;
 }
 
+.headline .btn-action {
+  border-radius: 20px;
+}
+
 @media screen and (min-width:480px) {
   .headline {
     background-image: url('../../../assets/backgrounds/background_home_desktop.png');

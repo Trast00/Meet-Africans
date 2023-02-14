@@ -48,7 +48,7 @@ a {
 .btn-action {
   padding: 8px 32px 8px 32px;
   border: none;
-  border-radius: 20px;
+  border-radius: 4px;
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--color-text);

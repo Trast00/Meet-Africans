@@ -111,6 +111,12 @@ label {
   border: 2px solid var(--color-purple);
 }
 
+.auth-icons-social {
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+}
+
 @media screen and (min-width:480px) {
   .step .interest {
     margin: 8px;

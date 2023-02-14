@@ -5,6 +5,9 @@ import interest3 from '../../../assets/images/icons_deeprelation.png'
 import interest4 from '../../../assets/images/icons_frienship.png'
 import interest5 from '../../../assets/images/icons_fun.png'
 import interest6 from '../../../assets/images/icons_unknown.png'
+import iconsWhatsapp from '../../../assets/images/icons_whatsapp.png'
+import iconsFacebook from '../../../assets/images/icons_facebook.png'
+import iconsGmail from '../../../assets/images/icons_gmail.png'
 import './register.css'
 
 const Register = () => {
@@ -26,6 +29,10 @@ const Register = () => {
   const [country, setCountry] = useState("");
 
   const [interest, setInterest] = useState("");
+
+  const [whatsapp, setWhatsapp] = useState("");
+  const [facebook, setFacebook] = useState("");
+  const [gmail, setGmail] = useState("");
   
   const [profileImg, setProfileImg] = useState(null);
 
@@ -151,6 +158,10 @@ const Register = () => {
         isValid = true
         break
       }
+      case 7: {
+        isValid = true
+        break
+      }
       default: {
         isValid = false
         break;
@@ -240,6 +251,8 @@ const Register = () => {
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
                 <option value="Other">Other</option>
+                <option value="Male & Female">Male & Female</option>
+                <option value="Male & Female & Other">Male & Female & Other</option>
               </select>
             </label>
             {errors.partnerGender && <p className='error'>{errors.partnerGender}</p>}
@@ -316,6 +329,26 @@ const Register = () => {
 
         {(step===6) && (
           <div className='column step'>
+            <label className='flex-center'>
+              <img className='auth-icons-social' src={iconsWhatsapp} alt="whatsapp" />
+              <input type="text" className='input-default' placeholder="Enter your email" 
+              value={whatsapp} onChange={(e) => {setWhatsapp(e.target.value);}}/>
+            </label>
+            <label className='flex-center'>
+              <img className='auth-icons-social' src={iconsFacebook} alt="facebook" />
+              <input type="text" className='input-default' placeholder="Enter your facebook info" 
+              value={facebook} onChange={(e) => setFacebook(e.target.value)}/>
+            </label>
+            <label className='flex-center'>
+              <img className='auth-icons-social' src={iconsGmail} alt="whatsapp" />
+              <input type="text" className='input-default' placeholder="Enter your email address" 
+              value={gmail} onChange={(e) => setGmail(e.target.value)}/>
+            </label>
+          </div>
+        )}
+
+        {(step===7) && (
+          <div className='column step'>
             <label>Biographie (facultaive)</label>
             <label>
               <textarea type="mu" value={bio} 
@@ -327,7 +360,7 @@ const Register = () => {
           </div>
         )}
 
-        {(step===7) && (
+        {(step===8) && (
           <div className='flex-center column step last'>
             <h3>Finishing</h3>
             <p>Loading  ... (this loading will never end)</p>
