@@ -84,3 +84,24 @@ export const listUsersTest = [
     }
   },
 ]
+
+export const listMessageTest = [
+  {
+    fromUserId: "systeme",
+    idChat: "testChatID",
+    message: "Debut de la conversation",
+    type: "text"
+  },
+  {
+    fromUserId: "testID2",
+    idChat: "testID2",
+    message: "Hi!",
+    type: "text"
+  },
+  {
+    fromUserId: "testID",
+    idChat: "testID2",
+    message: "Hi! How are you ?",
+    type: "text"
+  },
+]
