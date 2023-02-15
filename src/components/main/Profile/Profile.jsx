@@ -31,7 +31,7 @@ const Profile = () => {
   const [facebook, setFacebook] = useState("");
   const [gmail, setGmail] = useState("");
   
-  const [profileImg, setProfileImg] = useState(null);
+  //const [profileImg, setProfileImg] = useState(null);
 
   const [bio, setBio] = useState("");
 
