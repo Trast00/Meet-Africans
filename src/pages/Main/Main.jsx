@@ -1,5 +1,4 @@
 import React from 'react'
-import DetailInfo from '../../components/main/DetailInfo/DetailInfo'
 import ListChats from '../../components/main/ListChats/ListChats'
 import ListFriends from '../../components/main/ListFriends/ListFriends'
 import ListUsers from '../../components/main/ListUsers/ListUsers'
@@ -17,8 +16,8 @@ const Main = () => {
           {/*<ListFriends />*/}
         </div>
         <div className='desktop-only main-mid'>
-          <ListUsers />
-          {/*<ListChats /> <DetailInfo />*/}
+          {/* <ListUsers /> */}
+          <ListChats />
         </div>
       </main>
     </div>

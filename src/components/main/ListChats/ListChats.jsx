@@ -1,8 +1,12 @@
 import React from 'react'
+import HeaderChat from './HeaderChat'
+import './ListChats.css'
 
 const ListChats = () => {
   return (
-    <div>ListChats</div>
+    <div>
+      <HeaderChat />
+    </div>
   )
 }
 
