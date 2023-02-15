@@ -4,18 +4,29 @@ import { RiCompassDiscoverLine } from "react-icons/ri";
 import { RiDiscussLine } from "react-icons/ri";
 import { BiNews } from "react-icons/bi";
 import { AiOutlineSetting } from "react-icons/ai";
+import { NavLink } from 'react-router-dom';
 import './navMain.css'
 
 const NavMain = () => {
   return (
     <div className='flex-center row navMain'>
-      <img src={myProfile} alt="Your Profile" />
+      <NavLink to="/dashboard/profile">
+        <img src={myProfile} alt="Your Profile" />
+      </NavLink>
       <div className='flex-center row list-icons'>
-        <RiCompassDiscoverLine className='icons' />
-        <BiNews className='icons' />
-        <RiDiscussLine className='icons' />
+        <NavLink to="discover">
+          <RiCompassDiscoverLine className='icons' />
+        </NavLink>
+        <NavLink to="events">
+          <BiNews className='icons' />
+        </NavLink>
+        <NavLink to="chats">
+          <RiDiscussLine className='icons' />
+        </NavLink>
       </div>
-      <AiOutlineSetting className='icons' />
+      <NavLink to="setting">
+        <AiOutlineSetting className='icons' />
+      </NavLink>
     </div>
   )
 }

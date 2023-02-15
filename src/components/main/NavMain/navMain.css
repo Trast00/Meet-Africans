@@ -21,7 +21,16 @@
   color: #8b8a8a;
   margin-left: 12px;
   margin-right: 12px;
-} 
+}
+
+.navMain [aria-current="page"] .icons {
+  color: var(--color-pink);
+  transform: scale(1.2);
+}
+
+.navMain [aria-current="page"] img {
+  border: 2px solid var(--color-pink);
+}
 
 @media screen and (min-width:480px) {
   .navMain { 

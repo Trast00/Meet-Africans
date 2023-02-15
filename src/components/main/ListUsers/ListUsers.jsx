@@ -6,9 +6,9 @@ import UserOverview from '../UserOverview/UserOverview'
 const ListUsers = () => {
   
   return (
-    <ul className='row no-styling list-users'>
+    <ul className='row no-styling flex-center list-users'>
       {listUsersTest.map(user => {
-        return <li key={user.idChat}>
+        return <li key={user.data.id}>
           <UserOverview user={user}/>
         </li>
       })}
