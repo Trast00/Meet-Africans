@@ -1,0 +1,86 @@
+.profile {
+  height: 100%;
+  padding: 12px;
+  border-right: 1px solid #d3d3d3;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.profile::-webkit-scrollbar {
+  display: none;
+}
+
+.profile .edit {
+  margin-top: 6px;
+  font-size: 0.6rem;
+  text-decoration: underline;
+}
+
+.profile .step {
+  padding-left: 0;
+  width: 100%;
+  min-width: 0;
+  align-items: center;
+}
+
+.profile .step .interest img {
+  width: 24px;
+  height: 24px;
+}
+
+.profile .step .input-default {
+  max-width: 184px;
+  padding-left: 12px;
+  font-size: 0.8rem;
+  margin-top: 0;
+}
+
+.profile .step .list-interests {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.profile .step .list-interests .interest {
+  background-color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: start;
+}
+
+.profile .step .auth-icons-social {
+  width: 24px;
+  height: 24px;
+  margin-top: 0;
+  margin-right: 4px;
+}
+
+.profile .step .list-interests li {
+  width: 180px;
+}
+
+.profile-infos p, label {
+  font-size: 0.8rem;
+}
+
+.profile .img-profile img {
+  border: none;
+}
+
+.profile .profile-infos .labeled {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile .profile-infos .labeled-input {
+  margin-left: 0;
+}
+
+.btn-delete-account {
+  font-size: 1rem;
+  color: white;
+  background-color: var(--color-error);
+}
+

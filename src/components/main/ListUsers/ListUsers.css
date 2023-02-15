@@ -1,0 +1,13 @@
+.list-users {
+  width: 100%;
+  height: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.list-users::-webkit-scrollbar {
+  display: none;
+}

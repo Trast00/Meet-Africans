@@ -1,0 +1,51 @@
+.listfriends {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  text-align: start;
+}
+
+.listfriends .friend {
+  padding: 8px;
+}
+
+.listfriends .friend:hover {
+  background-color: #f3f3f3;
+}
+
+.listfriends .friend img {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background-color: white;
+  margin-right: 5px;
+}
+
+.listfriends .description-wrapper {
+  flex: 1;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.listfriends .description-wrapper h4 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.listfriends .description-wrapper p {
+  margin-top: 4px;
+  font-size: 0.8rem;
+}
+
+.listfriends .info-wrapper {
+  width: 25px;
+}
+
+@media screen and (min-width:480px) {
+  .listfriends .friend img {
+    width: 50px;
+    height: 50px;
+  }
+  .listfriends .description-wrapper h4 {
+    font-size: 0.8rem;
+  }
+}
