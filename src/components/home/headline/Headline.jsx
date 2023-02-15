@@ -19,7 +19,7 @@ const Headline = () => {
             potentiel partner around 
             all the west Africa
           </p>  
-          <Link to="/register" className="no-style btn-action">Join US!</Link>
+          <Link to="/auth" className="no-style btn-action">Join US!</Link>
         </main>
 
         <img src={headlineProfile} alt="Profile smiling girl" />

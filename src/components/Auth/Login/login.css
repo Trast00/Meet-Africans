@@ -1,0 +1,15 @@
+.login-from {
+  width: 100%;
+  min-height: 300px;
+}
+
+input {
+  margin-top: 20px;
+}
+
+.btn-register {
+  margin-top: 20px;
+  margin-bottom: 12px;
+  text-decoration: underline;
+  color: var(--color-purple);
+}

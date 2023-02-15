@@ -17,7 +17,7 @@ const Download = () => {
         <h2 className='section-title'>Start Meeting Now</h2>
         <img src={logoColored} alt="" />
         <p>Directly on the web site</p>
-        <Link to='/register' className='btn-action'>Sign In</Link>
+        <Link to='/auth' className='btn-action'>Sign In</Link>
       </section>
     </div>
   )

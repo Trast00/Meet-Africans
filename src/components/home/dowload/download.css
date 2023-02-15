@@ -21,6 +21,10 @@
   margin-bottom: 16px;
 }
 
+.dowload .btn-action {
+  border-radius: 20px;
+}
+
 .dowload section p {
   color: var(--color-text);
   text-decoration: underline;
