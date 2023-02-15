@@ -13,8 +13,8 @@ const Main = () => {
       <main className="column wrapper">
         <NavMain />
         <div className='main-side'>
-          {/* <Profile /> */}
-          <ListFriends />
+          <Profile />
+          {/*<ListFriends />*/}
         </div>
         <div className='desktop-only main-mid'>
           <ListUsers />

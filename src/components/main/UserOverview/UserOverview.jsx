@@ -25,7 +25,6 @@ const UserOverview = (props) => {
         <div className="flex-center column profile-overview">
           <div className="img-profile">
             <img src={myProfile} alt={`${nom} profile`} />
-            {/* connected */}
           </div>
           <h4>{nom}</h4>
           {localisation && <p>Linving in {localisation}</p>}
