@@ -20,6 +20,10 @@
   flex-direction: column-reverse;
 }
 
+.main-side .max-content {
+  flex-direction: column-reverse;
+}
+
 .main-mid {
   flex: 1;
 }

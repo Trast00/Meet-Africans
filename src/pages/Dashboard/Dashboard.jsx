@@ -1,10 +1,12 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom';
 import ListChats from '../../components/main/ListChats/ListChats'
 import ListFriends from '../../components/main/ListFriends/ListFriends'
 import ListUsers from '../../components/main/ListUsers/ListUsers'
 import NavMain from '../../components/main/NavMain/NavMain'
 import Profile from '../../components/main/Profile/Profile'
+import Setting from '../../components/main/Setting/Setting';
 import './dashboard.css'
 
 let defaultMidContent = (<ListUsers />) 
@@ -22,24 +24,27 @@ const Dashboard = () => {
       <main className="column wrapper">
         <NavMain />
         <div className='column main-side'>
-          {(currentLocation==="/dashboard/profile") && <Profile />}
+          <Routes>
+            <Route exact path='profile' element={<Profile />}/>
+            <Route exact path='setting' element={<Setting />}/>
+            <Route exact path='chats' element={<ListFriends />}/>
+            <Route path='*' element={
+              <div className='max-content column'>
+                <ListFriends />
+                <div className='mobile-only'>
+                  <ListUsers />
+                </div>
+              </div>
+            }/>
+          </Routes>
 
-          {(currentLocation==="/dashboard/discover" 
-            || currentLocation==="/dashboard/events" 
-            || currentLocation==="/dashboard/chats") 
-          && <ListFriends />}
-          
-          {/* For mobile version there is no main-mid */}
-          {(currentLocation==="/dashboard/discover") && (
-            <div className='mobile-only'>
-              <ListUsers />
-            </div>
-          )}
         </div>
         <div className='desktop-only main-mid'>
-          {(currentLocation==="/dashboard/discover")?  <ListUsers />
-          : (currentLocation==="/dashboard/chats")? <ListChats /> 
-          : defaultMidContent}
+          <Routes>
+            <Route exact path='discover' element={<ListUsers />} />
+            <Route exact path='chats' element={<ListChats />} />
+            <Route path='*' element={defaultMidContent} />
+          </Routes>
 
         </div>
       </main>
