@@ -124,6 +124,25 @@ const Profile = () => {
               </select>
             </label>
             {errors.partnerGender && <p className='error'>{errors.partnerGender}</p>}
+            <label className='flex-center labeled'>
+              Langage: 
+              <select value={langage} className='input-default labeled-input'
+                onChange={(e)=> setLangage(e.target.value)}>
+                <option value="">Select</option>
+                <option value="Français">Français</option>
+                <option value="English">English</option>
+                <option value="Français & English">Français & English</option>
+              </select>
+            </label>
+            {errors.langage && <p className='error'>{errors.langage}</p>}
+            <label className='labeled'>
+              Country:
+              <input type="text" value={country} 
+                className='input-default labeled-input' placeholder='Country (Mali, Senegale ...)'
+                onChange={(event) => setCountry(event.target.value)}
+              />
+              {errors.country && <p className='error'>{errors.country}</p>}
+            </label>
             <ul className='no-styling list-interests'>
               <li onClick={()=> setInterest("Mariage")} 
               className={(interest==="Mariage")?'flex-center interest active'
