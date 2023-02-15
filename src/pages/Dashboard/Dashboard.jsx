@@ -4,9 +4,9 @@ import ListFriends from '../../components/main/ListFriends/ListFriends'
 import ListUsers from '../../components/main/ListUsers/ListUsers'
 import NavMain from '../../components/main/NavMain/NavMain'
 import Profile from '../../components/main/Profile/Profile'
-import './main.css'
+import './dashboard.css'
 
-const Main = () => {
+const Dashboard = () => {
   return (
     <div className='flex-center main'>
       <main className="column wrapper">
@@ -24,4 +24,4 @@ const Main = () => {
   )
 }
 
-export default Main
+export default Dashboard

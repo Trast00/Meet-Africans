@@ -32,5 +32,7 @@
 }
 
 .friend-message p {
+  color: white;
+  background-color: var(--color-pink-ligth);
   border-top-left-radius: 0;
 }

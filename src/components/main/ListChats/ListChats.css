@@ -28,8 +28,9 @@
   font-size: 0.6rem;
 }
 
-.chats {
+.list-chat .chats {
   flex: 1;
+  padding: 24px 16px 2px 16px;
 }
 
 .chatBar {

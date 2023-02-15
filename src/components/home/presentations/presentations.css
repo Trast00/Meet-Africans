@@ -2,13 +2,13 @@
   margin-top: 80px;
 }
 
-.chats {
+.presentation-chat .chats {
   flex-wrap: wrap;
   color: var(--color-text);
   padding: 24px;
 }
 
-.chats p {
+.presentation-chat .chats p {
   text-align: start;
   width: fit-content;
   color: white;
