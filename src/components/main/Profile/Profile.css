@@ -10,6 +10,10 @@
   display: none;
 }
 
+.profile-form {
+  padding-bottom: 60px;
+}
+
 .profile .edit {
   margin-top: 6px;
   font-size: 0.6rem;

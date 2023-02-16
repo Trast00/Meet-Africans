@@ -61,7 +61,7 @@ const Profile = () => {
         <h4>Trast00</h4>
         <p className='edit'>Click here to edit you profile</p>
       </div>
-      <form>
+      <form className='flex-center column profile-form'>
         <div className='column step profile-infos'>
               <label>
                 <input type="email" className='input-default' placeholder="Enter your email" 

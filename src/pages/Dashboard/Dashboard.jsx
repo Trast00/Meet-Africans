@@ -36,16 +36,18 @@ const Dashboard = () => {
     <div className='flex-center main'>
       <main className="column wrapper">
         <NavMain />
-        <div className='column main-side'>
+        <div className='max-content column main-side'>
           <Routes>
             <Route exact path='profile' element={<Profile />}/>
             <Route exact path='setting' element={<Setting />}/>
             <Route exact path='chats' element={<ListFriends />}/>
             <Route path='*' element={
               <div className='max-content column'>
-                <ListFriends />
-                <div className='mobile-only'>
-                  <ListUsers />
+                <div className="max-content desktop-only">
+                  <ListFriends />
+                </div>
+                <div className='max-content mobile-only'>
+                  {defaultMidContent}
                 </div>
               </div>
             }/>
