@@ -26,7 +26,6 @@ const UserOverview = (props) => {
 
   const [showBio, setShowBio] = useState(detailed)
   const listFriend = useSelector(state => state.chat.friends.listFriends)
-  console.log(listFriend);
   const navigate = useNavigate()
   const sendMessage = () => {
     // Already contacted ?
