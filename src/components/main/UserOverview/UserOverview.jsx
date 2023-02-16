@@ -4,8 +4,11 @@ import myProfile from '../../../assets/images/profile_allassane.JPG'
 import { Link, useNavigate } from 'react-router-dom';
 import { v4 as uuidv4 } from "uuid";
 import { listFriendsTest } from '../../../_test_/testConstants';
+import { useDispatch, useSelector } from 'react-redux';
+import { updateCurrentFriend } from '../../../redux/chatReducers/chatReducers';
 
 const UserOverview = (props) => {
+  const dispatch = useDispatch()
   const {user, detailed} = props
   const { 
     data: { 
@@ -22,14 +25,19 @@ const UserOverview = (props) => {
   } = user;
 
   const [showBio, setShowBio] = useState(detailed)
-
+  const listFriend = useSelector(state => state.chat.friends.listFriends)
+  console.log(listFriend);
   const navigate = useNavigate()
   const sendMessage = () => {
     // Already contacted ?
-    const friendData = listFriendsTest.filter(friend => friend.idFriend===id)
-    const chatID = (friendData.length>0)? friendData[0].idChat: uuidv4()
-    navigate(`chat/${chatID}`)
-    
+    const friendData = listFriend.filter(friend => friend.idFriend===id)
+    const idChat = (friendData.length>0)? friendData[0].idChat: uuidv4()
+    const currentFriend = {
+      name:nom, idChat, idFriend:id, lastMessage: "", 
+      imgProfileUrl, nbrNewMessage: 0, connected:false,
+    }
+    dispatch(updateCurrentFriend(currentFriend))
+    navigate(`/dashboard/chats/${idChat}`)
   }
   return (
     <div className='max-width user-overview'>

@@ -4,12 +4,15 @@ import { createSlice } from "@reduxjs/toolkit";
 const dashboardReducer = createSlice({
   name: "meetafrica/dashboard",
   initialState: {
-    currentUser: {},
-    loading: false,
+    currentUser: {
+      /* empty data is required for initial state */
+      data: {},
+    },
+    loading: true,
   },
   reducers: {
     updateCurrentUser: (state, action) => {
-      return {...state, currentUser: action.payload}
+      return {...state, loading:false, currentUser: action.payload}
     }
   }
 })

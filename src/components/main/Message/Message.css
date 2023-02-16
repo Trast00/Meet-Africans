@@ -1,11 +1,12 @@
 .message {
   width: 100%;
+  margin-top: 6px;
 }
 
 .message p {
   padding: 6px;
   font-size: 0.7rem;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 .systeme-message {

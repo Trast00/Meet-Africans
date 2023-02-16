@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom'
 import { Routes, Route } from 'react-router-dom';
 import ListChats from '../../components/main/ListChats/ListChats'
@@ -7,10 +8,22 @@ import ListUsers from '../../components/main/ListUsers/ListUsers'
 import NavMain from '../../components/main/NavMain/NavMain'
 import Profile from '../../components/main/Profile/Profile'
 import Setting from '../../components/main/Setting/Setting';
+import { updateCurrentUser } from '../../redux/dashboard/dashboardReducer';
+import { currentUserTest } from '../../_test_/testConstants';
 import './dashboard.css'
 
 let defaultMidContent = (<ListUsers />) 
 const Dashboard = () => {
+  const dispatch = useDispatch()
+  const loading = useSelector(state => state.dashboard.loading)
+  
+  /* after a dispatch for fetching currentUser, updateCurrentUser */
+  useEffect(()=> {
+    if(loading){
+      dispatch(updateCurrentUser(currentUserTest))
+    }
+  }, [dispatch, loading])
+
   const currentLocation = useLocation().pathname
   if (currentLocation.includes("/dashboard/chats")) {
     defaultMidContent = (<ListChats />)
