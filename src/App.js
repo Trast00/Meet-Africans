@@ -1,8 +1,8 @@
+import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Auth from './pages/Auth/Auth';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Home from './pages/Home';
-import './App.css';
 
 function App() {
 

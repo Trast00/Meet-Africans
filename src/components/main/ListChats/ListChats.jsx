@@ -15,11 +15,12 @@ const ListChats = () => {
   const {id:myID} = useSelector(state => state.dashboard.currentUser).data
   let currentFriend = useSelector(state => state.chat.currentFriend) 
   let listFriend = useSelector(state => state.chat.friends.listFriends)
-  
-  const {idChat, idFriend, imgProfileUrl, name} = currentFriend
-  if (!idFriend && listFriend.lenght>0){
+
+  if (!currentFriend.idFriend && listFriend.length>0){
     currentFriend = listFriend[0] 
   }
+
+  const {idChat, idFriend, imgProfileUrl, name} = currentFriend
   let listMessage = useSelector(state => state.chat.messages.listMessages)[idChat]
   if (!idFriend) {
     return (<p className='max-content flex-center'>You have no friend !</p>)
