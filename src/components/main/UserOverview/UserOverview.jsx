@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './useroverview.css'
 import myProfile from '../../../assets/images/profile_allassane.JPG'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { v4 as uuidv4 } from "uuid";
 import { listFriendsTest } from '../../../_test_/testConstants';
 
@@ -23,8 +23,14 @@ const UserOverview = (props) => {
 
   const [showBio, setShowBio] = useState(detailed)
 
-  // Already contacted ?
-  const friendData = listFriendsTest.filter(friend => friend.idFriend===id)
+  const navigate = useNavigate()
+  const sendMessage = () => {
+    // Already contacted ?
+    const friendData = listFriendsTest.filter(friend => friend.idFriend===id)
+    const chatID = (friendData.length>0)? friendData[0].idChat: uuidv4()
+    navigate(`chat/${chatID}`)
+    
+  }
   return (
     <div className='max-width user-overview'>
       <div className="row imgs-wrapper">
@@ -62,9 +68,8 @@ const UserOverview = (props) => {
           : <p className='btn-bio'
             onClick={()=>setShowBio(true)}>Show more</p>
           }
-          {/*generate new id if we never chat, take old id if we already chat */}
-        <Link to={`/dashboard/chats/${(friendData.length>0)? friendData[0].idChat: uuidv4()}`} 
-        className='btn-action'>SEND MESSAGE</Link>
+        <button type='button' onClick={sendMessage}
+        className='btn-action'>SEND MESSAGE</button>
         </div>
         <img src={myProfile} alt={`${nom} profile`} className='img-profile-big large-screen-only' />
       </div>

@@ -4,13 +4,15 @@ import { createSlice } from "@reduxjs/toolkit";
 const dashboardReducer = createSlice({
   name: "meetafrica/dashboard",
   initialState: {
-    currentPage: "discover"
+    currentUser: {},
+    loading: false,
   },
   reducers: {
-    updateCurrentPage: (state, action) => {
-      return {...state, currentPage: action.payload}
+    updateCurrentUser: (state, action) => {
+      return {...state, currentUser: action.payload}
     }
   }
 })
 
+export const {updateCurrentUser} = dashboardReducer.actions
 export default dashboardReducer.reducer
