@@ -11,3 +11,8 @@
 .list-users::-webkit-scrollbar {
   display: none;
 }
+
+.list-users li {
+  width: 100%;
+  min-width: 300px;
+}

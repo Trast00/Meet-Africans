@@ -45,7 +45,6 @@ const Dashboard = () => {
             <Route exact path='chats' element={<ListChats />} />
             <Route path='*' element={defaultMidContent} />
           </Routes>
-
         </div>
       </main>
     </div>
