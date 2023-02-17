@@ -34,8 +34,6 @@ const Register = () => {
   const [whatsapp, setWhatsapp] = useState("");
   const [facebook, setFacebook] = useState("");
   const [gmail, setGmail] = useState("");
-  
-  const [profileImg, setProfileImg] = useState(null);
 
   const [bio, setBio] = useState("");
 
@@ -362,22 +360,6 @@ const Register = () => {
             <p>Loading  ... (this loading will never end)</p>
           </div>
         )}
-
-        {/* Profile Image: Should be Implemented later */}
-        {(step===-1) && (
-          <div className='column step auth-profile'>
-            <label>
-              Choose your profile picture
-              <input type="file" accept="image/*"
-                className='input-default' placeholder='Click to import'
-              />
-              {errors.username && <p className='error'>{errors.username}</p>}
-
-              {profileImg && <img src="" alt="your profile" />}
-            </label>
-          </div>
-        )}
-
 
         {(step===1) && (
           <button type="submit" className="no-style btn-action">Join US!</button>
