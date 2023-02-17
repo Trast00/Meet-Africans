@@ -10,7 +10,7 @@
 .main .wrapper {
   width: 100%;
   height: 100vh;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   flex-direction: column;
   overflow: hidden;
 }
@@ -18,7 +18,6 @@
 .main-side {
   width: 100%;
 }
-
 
 .main-mid {
   flex: 1;
@@ -29,7 +28,7 @@
   height: 100%;
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .main .wrapper {
     flex-direction: row;
   }
@@ -40,7 +39,7 @@
   }
 }
 
-@media screen and (min-width:780px) {
+@media screen and (min-width: 780px) {
   .main .wrapper {
     width: 94%;
     height: 95vh;

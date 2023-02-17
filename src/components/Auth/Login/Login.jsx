@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './login.css'
+import './login.css';
 
 const Login = () => {
   const [email, setEmail] = useState('dickoallassane1997@gmail.com');
@@ -27,26 +27,37 @@ const Login = () => {
       isValid = false;
     }
 
-    setErrors(errors)
-    return isValid
-  }
+    setErrors(errors);
+    return isValid;
+  };
 
   return (
-    <form className='flex-center column login-from' onSubmit={validateForm}>
-      <label>
-        <input type="email" className='input-default' placeholder="Enter your email" 
-        value={email} onChange={(e) => {setEmail(e.target.value);}}/>
-        {errors.email && <p className='error'>{errors.email}</p>}
+    <form className="flex-center column login-from" onSubmit={validateForm}>
+      <label htmlFor="email">
+        <input
+          type="email"
+          className="input-default"
+          placeholder="Enter your email"
+          value={email}
+          onChange={(e) => { setEmail(e.target.value); }}
+        />
+        {errors.email && <p className="error">{errors.email}</p>}
       </label>
-      <label>
-        <input type="password" className='input-default' placeholder="Enter your password" 
-        value={password} onChange={(e) => setPassword(e.target.value)} required/>
-        {errors.password && <p className='error'>{errors.password}</p>}
+      <label htmlFor="password">
+        <input
+          type="password"
+          className="input-default"
+          placeholder="Enter your password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
+        {errors.password && <p className="error">{errors.password}</p>}
       </label>
       <Link to="/dashboard" className="no-style btn-action">Connect</Link>
-      <Link to="/auth/register" className='btn-register'>Create a Account</Link>
+      <Link to="/auth/register" className="btn-register">Create a Account</Link>
     </form>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;

@@ -32,12 +32,13 @@
   border: 2px solid var(--color-pink);
 }
 
-@media screen and (min-width:480px) {
-  .navMain { 
+@media screen and (min-width: 480px) {
+  .navMain {
     flex-direction: column;
     border-bottom: none;
     border-right: 1px solid #d3d3d3;
   }
+
   .navMain .list-icons {
     flex-direction: column;
     flex: 0;

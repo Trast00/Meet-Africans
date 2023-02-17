@@ -8,7 +8,9 @@
 }
 
 .auth .wrapper {
-  width: clamp(400px, 100%, 600px);
+  width: 100%;
+  min-width: 400px;
+  max-width: 600px;
   height: 100vh;
   background-color: white;
   border-radius: 2px;
@@ -37,7 +39,7 @@ header .logo img {
 header h2 {
   width: 100%;
   padding-top: 6px;
-  justify-content:center;
+  justify-content: center;
   justify-self: center;
   color: var(--color-pink);
   font-size: 2rem;

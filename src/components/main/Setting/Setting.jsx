@@ -1,13 +1,11 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import './Setting.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Setting.css';
 
-const Setting = () => {
-  return (
-    <div className='max-content column'>
-      <Link to='/'className='btn-action btn-signout-account'>Sign Out</Link>
-    </div>
-  )
-}
+const Setting = () => (
+  <div className="max-content column">
+    <Link to="/" className="btn-action btn-signout-account">Sign Out</Link>
+  </div>
+);
 
-export default Setting
+export default Setting;

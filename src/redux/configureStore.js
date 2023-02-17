@@ -6,5 +6,5 @@ export default configureStore({
   reducer: {
     dashboard: dashboardReducer,
     chat: chatReducers,
-  }
-})
+  },
+});

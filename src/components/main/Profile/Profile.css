@@ -27,6 +27,10 @@
   align-items: center;
 }
 
+.profile .img-profile img {
+  border: none;
+}
+
 .profile .step .interest img {
   width: 24px;
   height: 24px;
@@ -65,12 +69,9 @@
   width: 180px;
 }
 
-.profile-infos p, label {
+.profile-infos p,
+label {
   font-size: 0.8rem;
-}
-
-.profile .img-profile img {
-  border: none;
 }
 
 .profile .profile-infos .labeled {
@@ -94,4 +95,3 @@
   color: var(--color-success);
   margin-top: 16px;
 }
-

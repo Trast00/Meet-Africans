@@ -47,11 +47,12 @@
   width: 25px;
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .listfriends .friend img {
     width: 50px;
     height: 50px;
   }
+
   .listfriends .description-wrapper h4 {
     font-size: 0.8rem;
   }

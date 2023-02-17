@@ -94,16 +94,17 @@ a {
   display: block;
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .desktop-only {
     display: block;
   }
+
   .mobile-only {
     display: none;
   }
 }
 
-@media screen and (min-width:780px) {
+@media screen and (min-width: 780px) {
   .large-screen-only {
     display: block;
   }
