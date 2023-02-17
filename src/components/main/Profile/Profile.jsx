@@ -10,30 +10,61 @@ import iconsFacebook from '../../../assets/images/icons_facebook.png'
 import iconsGmail from '../../../assets/images/icons_gmail.png'
 import myProfile from '../../../assets/images/profile_allassane.JPG'
 import './Profile.css'
+import { useDispatch, useSelector } from 'react-redux'
+import { updateCurrentUser } from '../../../redux/dashboard/dashboardReducer'
 
 const Profile = () => {
-  const [email, setEmail] = useState('dickoallassane1997@gmail.com');
+  const dispatch = useDispatch()
+  let currentUser = useSelector(state => state.dashboard.currentUser)
 
-  const [username, setUsername] = useState("Trast01");
-  const [age, setAge] = useState("23");
-  const [gender, setGender] = useState("Male");
+  const {
+    data: {
+      id,
+      nom: currentUsername,
+      imgProfileUrl: currentImgProfileUrl,
+      language: currentLanguage,
+      localisation: currentCountry,
+      age: currentAge,
+      relation: currentRelation,
+      sexe: currentGender,
+      email: currentEmail
+    },
+    contact: {
+      gmail: currentGmail,
+      messenger : currentMessenger,
+      whatsapp : currentWhatsapp
+    },
+    info: {
+      bio: currentBio
+    },
+    partner: {
+      age: currentPartnerAge,
+      sexe: currentPartnerGender
+    }
+  } = currentUser
 
-  const [minPartnerAge, setPartnerMinAge] = useState("18");
-  const [maxPartnerAge, setPartnerMaxAge] = useState("99");
-  const [partnerGender, setPartnerGender] = useState("Female");
+  const [email, setEmail] = useState(currentEmail);
+
+  const [username, setUsername] = useState(currentUsername);
+  const [age, setAge] = useState(currentAge);
+  const [gender, setGender] = useState(currentGender);
+
+  const [minPartnerAge, setPartnerMinAge] = useState(parseInt(currentPartnerAge.slice(0,2)));
+  const [maxPartnerAge, setPartnerMaxAge] = useState(parseInt(currentPartnerAge.slice(3,5)));
+  const [partnerGender, setPartnerGender] = useState(currentPartnerGender);
   
-  const [langage, setLangage] = useState("");
-  const [country, setCountry] = useState("");
+  const [langage, setLangage] = useState(currentLanguage);
+  const [country, setCountry] = useState(currentCountry);
 
-  const [interest, setInterest] = useState("");
+  const [interest, setInterest] = useState(currentRelation);
 
-  const [whatsapp, setWhatsapp] = useState("");
-  const [facebook, setFacebook] = useState("");
-  const [gmail, setGmail] = useState("");
+  const [whatsapp, setWhatsapp] = useState(currentWhatsapp);
+  const [facebook, setFacebook] = useState(currentMessenger);
+  const [gmail, setGmail] = useState(currentGmail);
   
   //const [profileImg, setProfileImg] = useState(null);
 
-  const [bio, setBio] = useState("");
+  const [bio, setBio] = useState(currentBio);
 
   const [errors, setErrors] = useState({});
   
@@ -52,6 +83,100 @@ const Profile = () => {
     return isValid;
   }
 
+  const validateForm = () => {
+    const errors = {};
+    let isValid = true;
+
+    validateEmail(email)
+
+    if (!username) {
+      errors.username = "Please enter a username."
+      isValid = false;
+    }
+
+    if (!age) {
+      errors.age = "Please enter your age."
+      isValid = false;
+    }
+
+    if (age < 18 || age > 99) {
+      errors.age = "Please enter your age between 18 and 99."
+      isValid = false;
+    }
+
+    if (!gender) {
+      errors.gender = "Please select your gender."
+      isValid = false;
+    }
+
+    if (minPartnerAge < 18 || minPartnerAge > 99) {
+      errors.minPartnerAge = "Please enter your partner age between 18 and 99."
+      isValid = false;
+    }
+
+    if (maxPartnerAge < 18 || maxPartnerAge > 99) {
+      errors.maxPartnerAge = "Please enter your partner age between 18 and 99."
+      isValid = false;
+    }
+
+    if (minPartnerAge > maxPartnerAge ) {
+      errors.minPartnerAge = "This age should be lower (than the maximum age)"
+      errors.maxPartnerAge = "This age should be higher (than the minimum age)"
+      isValid = false;
+    }
+
+    if (!partnerGender) {
+      errors.partnerGender = "Please select your partner gender."
+      isValid = false;
+    }
+    if (!langage) {
+      errors.langage = "Please select your langage."
+      isValid = false;
+    }
+    if(!interest){
+      errors.interest = "Please select your interests."
+      isValid = false;
+    }
+
+    setErrors(errors)
+    return isValid
+  }
+
+  const [saved, setSaved] = useState(false)
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (validateForm()) {
+      const updateData = {
+        data: {
+          id,
+          nom: username,
+          imgProfileUrl: currentImgProfileUrl,
+          language:langage,
+          localisation: country,
+          age: 18,
+          relation: interest,
+          sexe: gender,
+          email
+        },
+        contact: {
+          gmail,
+          messenger: facebook,
+          whatsapp,
+        },
+        info: {
+          bio,
+        },
+        partner: {
+          age:`${minPartnerAge}-${maxPartnerAge}`,
+          relation: interest,
+          sexe: partnerGender
+        }
+      }
+      dispatch(updateCurrentUser(updateData))
+      setSaved(true)
+    } 
+  }
+
   return (
     <div className='profile'>
       <div>
@@ -59,9 +184,8 @@ const Profile = () => {
           <img src={myProfile} alt={`your profile`} />
         </div>
         <h4>Trast00</h4>
-        <p className='edit'>Click here to edit you profile</p>
       </div>
-      <form className='flex-center column profile-form'>
+      <form onSubmit={(e)=> e.preventDefault()} className='flex-center column profile-form'>
         <div className='column step profile-infos'>
               <label>
                 <input type="email" className='input-default' placeholder="Enter your email" 
@@ -206,8 +330,8 @@ const Profile = () => {
                 {errors.bio && <p className='error'>{errors.bio}</p>}
               </label>
         </div>
-        <button type='button' className='btn-action'>Save</button>
-        <button type='button' className='btn-action btn-delete-account'>Delete account</button>
+        {saved && <p className='profile-save-sucess'>Saved</p>}
+        <button type='submit' className='btn-action' onClick={handleSubmit}>Save</button>
       </form>
     </div>
   )

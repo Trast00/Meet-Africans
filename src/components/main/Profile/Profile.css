@@ -82,9 +82,16 @@
   margin-left: 0;
 }
 
-.btn-delete-account {
+.profile .btn-action {
   font-size: 1rem;
-  color: white;
-  background-color: var(--color-error);
+  width: 100%;
+}
+
+.profile-save-sucess {
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: underline;
+  color: var(--color-success);
+  margin-top: 16px;
 }
 

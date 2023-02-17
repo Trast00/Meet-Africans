@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import './login.css'
 
 const Login = () => {
@@ -42,8 +43,8 @@ const Login = () => {
         value={password} onChange={(e) => setPassword(e.target.value)} required/>
         {errors.password && <p className='error'>{errors.password}</p>}
       </label>
-      <button type="submit" className="no-style btn-action">Connect</button>
-      <p className='btn-register'>Create a Account</p>
+      <Link to="/dashboard" className="no-style btn-action">Connect</Link>
+      <Link to="/auth/register" className='btn-register'>Create a Account</Link>
     </form>
   )
 }

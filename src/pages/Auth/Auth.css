@@ -53,6 +53,7 @@ header h2 {
 @media screen and (min-width: 480px) {
   .auth .wrapper {
     height: 96vh;
+    overflow: hidden;
   }
 
   header h2 {

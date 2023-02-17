@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import './useroverview.css'
 import myProfile from '../../../assets/images/profile_allassane.JPG'
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { v4 as uuidv4 } from "uuid";
-import { listFriendsTest } from '../../../_test_/testConstants';
 import { useDispatch, useSelector } from 'react-redux';
 import { updateCurrentFriend } from '../../../redux/chatReducers/chatReducers';
 
@@ -48,20 +47,22 @@ const UserOverview = (props) => {
           <h4>{nom}</h4>
           {localisation && <p>Linving in {localisation}</p>}
           {language && <p>Speak {language}</p>}
-          <div className="searching">
-            <h6>I am:</h6>
-            <div className='column list-search'>
-              <p> {sexe}, </p>
-              <p> {age} years old, </p>
-              <p> {relation}</p>
+          <div className="row search-wrapper">
+            <div className="searching">
+              <h6>I am:</h6>
+              <div className='column list-search'>
+                <p> {sexe}, </p>
+                <p> {age} years old, </p>
+                <p> {relation}</p>
+              </div>
             </div>
-          </div>
-          <div className="searching">
-            <h6>Looking for:</h6>
-            <div className='column list-search'>
-              <p> {partnerSexe}, </p>
-              <p> {partnerAge} years old, </p>
-              <p> {partnerRelation}</p>
+            <div className="searching">
+              <h6>Looking for:</h6>
+              <div className='column list-search'>
+                <p> {partnerSexe}, </p>
+                <p> {partnerAge} years old, </p>
+                <p> {partnerRelation}</p>
+              </div>
             </div>
           </div>
           

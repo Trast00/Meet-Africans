@@ -9,21 +9,22 @@ import iconsWhatsapp from '../../../assets/images/icons_whatsapp.png'
 import iconsFacebook from '../../../assets/images/icons_facebook.png'
 import iconsGmail from '../../../assets/images/icons_gmail.png'
 import './register.css'
+import { Link } from 'react-router-dom'
 
 const Register = () => {
   const [step, setStep] = useState(1)
 
-  const [email, setEmail] = useState('dickoallassane1997@gmail.com');
-  const [password, setPassword] = useState('dicko123');
-  const [passwordConfirm, setPasswordConfirm] = useState('dicko123');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [passwordConfirm, setPasswordConfirm] = useState('');
 
-  const [username, setUsername] = useState("Trast01");
-  const [age, setAge] = useState("23");
-  const [gender, setGender] = useState("Male");
+  const [username, setUsername] = useState("");
+  const [age, setAge] = useState("");
+  const [gender, setGender] = useState("");
 
-  const [minPartnerAge, setPartnerMinAge] = useState("18");
-  const [maxPartnerAge, setPartnerMaxAge] = useState("99");
-  const [partnerGender, setPartnerGender] = useState("Female");
+  const [minPartnerAge, setPartnerMinAge] = useState("");
+  const [maxPartnerAge, setPartnerMaxAge] = useState("");
+  const [partnerGender, setPartnerGender] = useState("");
   
   const [langage, setLangage] = useState("");
   const [country, setCountry] = useState("");
@@ -44,7 +45,6 @@ const Register = () => {
     event.preventDefault();
     if (validateForm()) {
       if(step<8){
-        console.log(step)
         setStep(step+1)
       }
     } 
@@ -64,10 +64,6 @@ const Register = () => {
 
     setErrors(errors);
     return isValid;
-  }
-
-  const uploadProfileImg = () => {
-    setProfileImg("")
   }
 
   const validateForm = () => {
@@ -374,7 +370,6 @@ const Register = () => {
               Choose your profile picture
               <input type="file" accept="image/*"
                 className='input-default' placeholder='Click to import'
-                onChange={(event) => uploadProfileImg(event.target.value)}
               />
               {errors.username && <p className='error'>{errors.username}</p>}
 
@@ -384,15 +379,19 @@ const Register = () => {
         )}
 
 
-        {(step===1) ? (
+        {(step===1) && (
           <button type="submit" className="no-style btn-action">Join US!</button>
-        ): <div className='row auth-navbtns'>
+        )} 
+        {(step>1 && step<8) && <div className='row auth-navbtns'>
             <button type="button" onClick={() => setStep(step-1)}
             className="no-style btn-auth">Previous</button>
             <button type="submit" className="no-style btn-auth">Next</button>
           </div>
         }
-        <p className='btn-login'>Already Have a Account</p>
+        {(step===8) && (
+          <Link to='/dashboard' className="no-style btn-action">Finish</Link>
+        )} 
+        <Link to="/auth/login" className='btn-login'>Already Have a Account</Link>
       </form>
     </div>
   )

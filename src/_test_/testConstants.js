@@ -7,9 +7,10 @@ export const currentUserTest = {
     localisation: "Mali",
     age: 18,
     phone: "+22394369704",
-    prenom: "",
+    //prenom: "",
     relation: "Marriage",
     sexe: "Male",
+    email: "dickoallassane1997@gmail.com"
   },
   contact: {
     gmail: "testest@gmail.com",
