@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   position: fixed;
-  top: 0px;
+  top: 0;
   justify-content: flex-end;
 }
 
@@ -47,7 +47,7 @@
   transform: translateX(-100vw);
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .icons-menu {
     display: none;
   }
@@ -55,7 +55,9 @@
   .listNav {
     right: 0;
     opacity: 1;
-    width: clamp(120px, 350px, 48%);
+    width: 48%;
+    min-width: 120px;
+    max-width: 350px;
     height: auto;
     flex-direction: row;
     justify-content: space-evenly;
@@ -72,5 +74,4 @@
     padding: 8px;
     border: none;
   }
-
 }

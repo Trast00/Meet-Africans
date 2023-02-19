@@ -1,5 +1,5 @@
 .user-overview {
-  background-color: #FDFDFD;
+  background-color: #fdfdfd;
   margin-bottom: 12px;
   padding: 8px;
 }
@@ -10,7 +10,9 @@
 }
 
 .profile-overview {
+  flex: 1;
   min-width: 180px;
+  max-width: 60%;
   margin-bottom: 16px;
 }
 
@@ -32,16 +34,48 @@
 }
 
 .img-profile-big {
-  width: clamp(100px, 180px, 80%);
+  width: 180px;
+  min-width: 100px;
+  max-width: 80%;
+  max-height: 300px;
   aspect-ratio: 2/3;
   background-color: var(--color-purple-ligth);
   border-radius: 16px;
   border: 2px solid var(--color-purple-ligth);
 }
 
+.search-wrapper {
+  flex-wrap: wrap;
+}
+
 .searching {
+  width: 100%;
+  min-width: 280px;
+  max-width: 1000px;
   text-align: start;
   padding: 12px;
+}
+
+.user-overview .bio-wrapper {
+  width: 100%;
+}
+
+.user-overview .bio-description {
+  width: auto;
+  text-align: start;
+  font-size: 0.8rem;
+  color: var(--color-text);
+  padding: 6px 12px 8px 12px;
+  border: 1px solid #d3d3d3;
+  border-radius: 8px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.user-overview .btn-bio {
+  color: var(--color-text);
+  font-size: 0.8rem;
+  text-decoration: underline;
 }
 
 .user-overview .btn-action {
@@ -49,10 +83,11 @@
   font-weight: 500;
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .imgs-wrapper {
     flex-direction: row;
   }
+
   .list-search {
     flex-direction: row;
     flex-wrap: wrap;

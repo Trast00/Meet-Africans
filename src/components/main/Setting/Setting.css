@@ -1,0 +1,6 @@
+.btn-signout-account {
+  font-size: 1rem;
+  color: white;
+  background-color: var(--color-error);
+  margin: 16px;
+}

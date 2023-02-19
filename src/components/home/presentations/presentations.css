@@ -52,9 +52,8 @@
   border: 2px solid var(--color-pink-ligth);
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .presentation-chat {
     display: flex;
-    
   }
 }

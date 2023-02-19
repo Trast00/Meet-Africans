@@ -77,6 +77,11 @@ a {
   color: var(--color-error);
 }
 
+.max-content {
+  width: 100%;
+  height: 100%;
+}
+
 .desktop-only {
   display: none;
 }
@@ -85,13 +90,21 @@ a {
   display: none;
 }
 
-@media screen and (min-width:480px) {
+.mobile-only {
+  display: block;
+}
+
+@media screen and (min-width: 480px) {
   .desktop-only {
     display: block;
   }
+
+  .mobile-only {
+    display: none;
+  }
 }
 
-@media screen and (min-width:780px) {
+@media screen and (min-width: 780px) {
   .large-screen-only {
     display: block;
   }

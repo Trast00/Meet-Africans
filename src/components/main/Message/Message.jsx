@@ -1,18 +1,37 @@
-import React from 'react'
-import './Message.css'
+import React from 'react';
+import './Message.css';
+import PropTypes from 'prop-types';
 
 const Message = (props) => {
-  const { myID } = props
-  const { fromUserId, message,} = props.message;
-  const myMessage = (fromUserId === myID)
-  const systemeMessage = (fromUserId === "systeme")
+  const { myID, data } = props;
+  const { fromUserId, message } = data;
+
+  let messageClass = '';
+  if (fromUserId === myID) {
+    messageClass = 'my-message';
+  } else if (fromUserId === 'systeme') {
+    messageClass = 'systeme-message';
+  } else {
+    messageClass = 'friend-message';
+  }
   return (
-    <div className={"row message" + (myMessage? " my-message"
-    : (systemeMessage? " systeme-message"
-    : " friend-message"))}>
+    <div className={`row message ${messageClass}`}>
       <p>{message}</p>
     </div>
-  )
-}
+  );
+};
 
-export default Message
+Message.propTypes = {
+  myID: PropTypes.string,
+  data: PropTypes.shape({
+    fromUserId: PropTypes.string.isRequired,
+    message: PropTypes.string.isRequired,
+  }),
+};
+
+Message.defaultProps = {
+  myID: '',
+  data: { fromUserId: '', message: '' },
+};
+
+export default Message;

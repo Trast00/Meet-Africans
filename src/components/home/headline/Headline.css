@@ -32,7 +32,6 @@
 
 .headline-wrapper main {
   color: white;
-  max-width: clamp(250px, 400px, 80%);
   padding-bottom: 35px;
 }
 
@@ -54,16 +53,18 @@
   border-radius: 20px;
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .headline {
     background-image: url('../../../assets/backgrounds/background_home_desktop.png');
   }
 }
 
-@media screen and (min-width:780px) {
+@media screen and (min-width: 780px) {
   .headline-wrapper img {
     display: block;
-    width: clamp(200px, 40%, 600px);
+    width: 40%;
+    min-width: 200px;
+    max-width: 600px;
     transition-duration: 300ms;
   }
 
@@ -71,5 +72,4 @@
     color: white;
     max-width: 50%;
   }
-
 }

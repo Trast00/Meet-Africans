@@ -3,10 +3,14 @@
   height: 100%;
   background-color: white;
   text-align: start;
+  list-style: none;
+  overflow: hidden;
 }
 
 .listfriends .friend {
+  max-width: 100%;
   padding: 8px;
+  background-color: white;
 }
 
 .listfriends .friend:hover {
@@ -22,6 +26,7 @@
 }
 
 .listfriends .description-wrapper {
+  max-width: 68%;
   flex: 1;
   border-bottom: 1px solid #d3d3d3;
 }
@@ -32,19 +37,22 @@
 }
 
 .listfriends .description-wrapper p {
+  max-width: 95%;
   margin-top: 4px;
   font-size: 0.8rem;
+  overflow: hidden;
 }
 
 .listfriends .info-wrapper {
   width: 25px;
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .listfriends .friend img {
     width: 50px;
     height: 50px;
   }
+
   .listfriends .description-wrapper h4 {
     font-size: 0.8rem;
   }

@@ -31,10 +31,11 @@
   margin-bottom: 12px;
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   .dowload {
     flex-direction: row-reverse;
   }
+
   .dowload section {
     width: 50%;
   }
