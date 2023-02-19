@@ -7,6 +7,8 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [� Live Demo ](#-live-demo-)
+  - [📺 Presentation Video ](#-presentation-video-)
   - [💻 Getting Started ](#-getting-started-)
     - [Setup](#setup)
     - [Install](#install)
@@ -44,6 +46,16 @@ The project have a android version.
 - **Highly responsive design**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+[Live Demo Link](https://meet-africans.netlify.app/)
+
+## 📺 Presentation Video <a name="live-demo"></a>
+[Presentation video avaible soon!]()
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
