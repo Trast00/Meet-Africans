@@ -7,6 +7,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [Preview](#preview)
   - [🚀 Live Demo ](#-live-demo-)
   - [📺 Presentation Video ](#-presentation-video-)
   - [💻 Getting Started ](#-getting-started-)
@@ -46,6 +47,21 @@ The project have a android version.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Preview
+
+<details>
+  <summary>Preview</summary>
+  <summary>
+    <img src='./src/assets/previews/documentations/preview1', alt='preview home'>
+  </summary>
+  <ul>
+    <li>
+      <img src='./src/assets/previews/documentations/previewdiscover', alt='preview home'>
+      <img src='./src/assets/previews/documentations/previewchat', alt='preview home'>
+      <img src='./src/assets/previews/documentations/previewprofile', alt='preview home'>
+    </li>
+  </ul>
+</details>
 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
