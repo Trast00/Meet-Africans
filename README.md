@@ -7,7 +7,8 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [� Live Demo ](#-live-demo-)
+  - [Preview](#preview)
+  - [🚀 Live Demo ](#-live-demo-)
   - [📺 Presentation Video ](#-presentation-video-)
   - [💻 Getting Started ](#-getting-started-)
     - [Setup](#setup)
@@ -24,7 +25,6 @@
 **Rencontre Afrique** Look no further than this dating webapp! The dashboard allows you to quickly and easily connect with new users and start chatting with potential matches. You have the ability to edit and save your profile information. The project is highly mobile-friendly. 
 
 The project have a android version.
-
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -46,6 +46,23 @@ The project have a android version.
 - **Highly responsive design**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Preview
+
+<details>
+  <summary>Preview</summary>
+  <summary>
+    <img src='./src/assets/previews/documentations/preview1', alt='preview home'>
+  </summary>
+  <ul>
+    <li>
+      <img src='./src/assets/previews/documentations/previewdiscover', alt='preview home'>
+      <img src='./src/assets/previews/documentations/previewchat', alt='preview home'>
+      <img src='./src/assets/previews/documentations/previewprofile', alt='preview home'>
+    </li>
+  </ul>
+</details>
+
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
