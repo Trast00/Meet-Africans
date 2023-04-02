@@ -52,13 +52,13 @@ The project have a android version.
 <details>
   <summary>Preview</summary>
   <summary>
-    <img src='./src/assets/previews/documentations/preview1', alt='preview home'>
+    <img src='./src/assets/previews/documentations/preview1.png', alt='preview home'>
   </summary>
   <ul>
     <li>
-      <img src='./src/assets/previews/documentations/previewdiscover', alt='preview home'>
-      <img src='./src/assets/previews/documentations/previewchat', alt='preview home'>
-      <img src='./src/assets/previews/documentations/previewprofile', alt='preview home'>
+      <img src='./src/assets/previews/documentations/previewdiscover.png', alt='preview home'>
+      <img src='./src/assets/previews/documentations/previewchat.png', alt='preview home'>
+      <img src='./src/assets/previews/documentations/previewprofile.png', alt='preview home'>
     </li>
   </ul>
 </details>
