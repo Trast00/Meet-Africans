@@ -41,6 +41,15 @@
   background-color: #efefef;
 }
 
+.chatBar .btn-emojie {
+  color: var(--color-text);
+  padding: 6px;
+}
+
+.chatBar .btn-emojie:hover {
+  background-color: #dbd1d1;
+}
+
 .chatBar input {
   flex: 1;
   border-radius: 4px;
