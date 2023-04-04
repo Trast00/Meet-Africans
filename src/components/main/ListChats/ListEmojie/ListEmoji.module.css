@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  height: 400px;
+  padding-left: 24px;
+  padding-right: 24px;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.category, .emojis {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.category {
+  font-size: 0.8rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: #7a7777;
+  text-decoration: underline;
+}
+
+.emojis li {
+  margin: 6px;
+}
+
+.emoji {
+  font-size: 22px;
+  padding: 3px;
+}
+
+.emoji:hover {
+  transform: rotate(45deg);
+  background-color: #ece9e9;
+}
