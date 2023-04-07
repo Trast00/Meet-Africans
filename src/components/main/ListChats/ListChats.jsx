@@ -12,6 +12,7 @@ import ListEmoji from './ListEmojie/ListEmoji';
 const ListChats = () => {
   const dispatch = useDispatch();
   const [message, setMessage] = useState('');
+  const [showMenuEmojie, setShowMenuEmojie] = useState(false)
   let isNewFriend = false;
 
   const { id: myID } = useSelector((state) => state.dashboard.currentUser).data;
@@ -42,6 +43,7 @@ const ListChats = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    setShowMenuEmojie(false)
     /* validate input */
     if (message.trim()) {
       if (isNewFriend) {
@@ -68,6 +70,13 @@ const ListChats = () => {
     }
   };
 
+  const handleAddEmoji = (event) => {
+    if (event.target.alt){
+      const newMessage = message +  event.target.alt
+      setMessage(newMessage)
+    }
+  }
+
   return (
     <div className="column list-chat">
       <HeaderChat imgUrl={imgProfileUrl} name={name} status="Offline" />
@@ -78,17 +87,20 @@ const ListChats = () => {
           </li>
         ))}
       </ul>
-      <form className="row chatBar" onSubmit={(e) => handleSubmit(e)}>
-        <FaRegSmile className="btn-emojie" />
-        <input
-          type="text"
-          value={message}
-          placeholder="message ..."
-          onChange={(e) => setMessage(e.target.value)}
-        />
-        <button type="submit" aria-label="send" className="btn-send-message"><RiSendPlaneFill /></button>
-      </form>
-      <ListEmoji />
+      <div className={`bottom-chat ${(showMenuEmojie && "show-emojies")}`}>
+        <form className="row chatBar" onSubmit={(e) => handleSubmit(e)}>
+          <FaRegSmile className="btn-emojie" onClick={e=> setShowMenuEmojie(!showMenuEmojie)} />
+          <input
+            type="text"
+            value={message}
+            placeholder="message ..."
+            onChange={(e) => setMessage(e.target.value)
+            }
+          />
+          <button type="submit" aria-label="send" className="btn-send-message"><RiSendPlaneFill /></button>
+        </form>
+        <ListEmoji handleAddEmoji= {e=> handleAddEmoji(e)}/>
+      </div>
     </div>
   );
 };

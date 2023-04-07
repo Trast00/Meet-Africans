@@ -3,7 +3,7 @@
   margin-top: 6px;
 }
 
-.message p {
+.message span {
   padding: 6px;
   font-size: 0.7rem;
   border-radius: 10px;
@@ -13,7 +13,7 @@
   justify-content: center;
 }
 
-.systeme-message p {
+.systeme-message span {
   border: 1px solid #d3d3d3;
   background-color: transparent;
   color: var(--color-text-gray);
@@ -26,14 +26,23 @@
   justify-content: flex-end;
 }
 
-.my-message p {
+.my-message span {
   color: white;
   background-color: var(--color-purple);
   border-top-right-radius: 0;
 }
 
-.friend-message p {
+.friend-message span {
   color: white;
   background-color: var(--color-pink-ligth);
   border-top-left-radius: 0;
+}
+
+span.no-bg {
+  background-color: transparent;
+}
+
+span.emoji-only img {
+  width: 4em !important; 
+  height: 4em !important;
 }
