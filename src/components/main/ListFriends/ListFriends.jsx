@@ -11,9 +11,11 @@ const ListFriends = () => {
   }
 
   return (
-    <ul className="column listfriends">
-      {listFriends.map((friend) => <li key={friend.idChat}><Friend friend={friend} /></li>)}
-    </ul>
+    <div className="list-friends-wrapper">
+      <ul className="column listfriends">
+        {listFriends.map((friend) => <li key={friend.idChat}><Friend friend={friend} /></li>)}
+      </ul>
+    </div>
   );
 };
 

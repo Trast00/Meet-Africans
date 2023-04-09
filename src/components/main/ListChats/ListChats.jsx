@@ -12,7 +12,7 @@ import ListEmoji from './ListEmojie/ListEmoji';
 const ListChats = () => {
   const dispatch = useDispatch();
   const [message, setMessage] = useState('');
-  const [showMenuEmojie, setShowMenuEmojie] = useState(false)
+  const [showMenuEmojie, setShowMenuEmojie] = useState(false);
   let isNewFriend = false;
 
   const { id: myID } = useSelector((state) => state.dashboard.currentUser).data;
@@ -43,7 +43,7 @@ const ListChats = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setShowMenuEmojie(false)
+    setShowMenuEmojie(false);
     /* validate input */
     if (message.trim()) {
       if (isNewFriend) {
@@ -57,6 +57,13 @@ const ListChats = () => {
           connected: false,
         };
         dispatch(addNewFriend(newFriend));
+        const sysMessage = {
+          fromUserId: 'systeme',
+          idChat,
+          message: 'Start Discussion',
+          type: 'text',
+        };
+        dispatch(addNewMessage(sysMessage));
       }
 
       const newMessage = {
@@ -71,11 +78,11 @@ const ListChats = () => {
   };
 
   const handleAddEmoji = (event) => {
-    if (event.target.alt){
-      const newMessage = message +  event.target.alt
-      setMessage(newMessage)
+    if (event.target.alt) {
+      const newMessage = message + event.target.alt;
+      setMessage(newMessage);
     }
-  }
+  };
 
   return (
     <div className="column list-chat">
@@ -87,19 +94,18 @@ const ListChats = () => {
           </li>
         ))}
       </ul>
-      <div className={`bottom-chat ${(showMenuEmojie && "show-emojies")}`}>
+      <div className={`bottom-chat ${(showMenuEmojie && 'show-emojies')}`}>
         <form className="row chatBar" onSubmit={(e) => handleSubmit(e)}>
-          <FaRegSmile className="btn-emojie" onClick={e=> setShowMenuEmojie(!showMenuEmojie)} />
+          <FaRegSmile className="btn-emojie" onClick={() => setShowMenuEmojie(!showMenuEmojie)} />
           <input
             type="text"
             value={message}
             placeholder="message ..."
-            onChange={(e) => setMessage(e.target.value)
-            }
+            onChange={(e) => setMessage(e.target.value)}
           />
           <button type="submit" aria-label="send" className="btn-send-message"><RiSendPlaneFill /></button>
         </form>
-        <ListEmoji handleAddEmoji= {e=> handleAddEmoji(e)}/>
+        <ListEmoji handleAddEmoji={(e) => handleAddEmoji(e)} />
       </div>
     </div>
   );

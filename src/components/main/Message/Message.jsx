@@ -22,11 +22,12 @@ const Message = (props) => {
     return matches !== null && matches.length === 1;
   };
 
-  const hasOneEmoji = testOneEmoji(message)
+  const hasOneEmoji = testOneEmoji(message);
   return (
     <div className={`row message ${messageClass}`}>
-      <Twemoji text={message}
-      className={(hasOneEmoji ? "no-bg emoji-only": "")}
+      <Twemoji
+        text={message}
+        className={(hasOneEmoji ? 'no-bg emoji-only' : '')}
       />
     </div>
   );

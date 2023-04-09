@@ -1,7 +1,11 @@
-.listfriends {
-  width: 100%;
+.list-friends-wrapper {
   height: 100%;
   background-color: white;
+}
+
+.listfriends {
+  width: 100%;
+  flex-direction: column-reverse;
   text-align: start;
   list-style: none;
   overflow: hidden;

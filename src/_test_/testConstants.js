@@ -176,7 +176,7 @@ export const listMessageTest = {
     {
       fromUserId: 'systeme',
       idChat: 'testChatID',
-      message: 'Debut de la conversation',
+      message: 'Start Discussion',
       type: 'text',
     },
     {
