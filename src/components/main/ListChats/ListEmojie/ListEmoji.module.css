@@ -13,11 +13,11 @@
   display: none;
 }
 
-.category, .emojis {
+.category,
+.emojis {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
-  
 }
 
 .category {
