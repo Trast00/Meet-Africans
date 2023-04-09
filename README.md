@@ -18,6 +18,7 @@
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
+  - [� Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
 # 📖 Rencontre Afrique <a name="about-project"></a>
@@ -130,6 +131,11 @@ Feel free to check the [issues page](https://github.com/Trast00/Meet-Africans/is
 Give a ⭐️ if you like this project! It's help a lot
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank:
+- **[Twemojie](https://twemoji.twitter.com/)**: used to parse text Emojie in scalable images
 
 ## 📝 License <a name="license"></a>
 
