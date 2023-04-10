@@ -133,6 +133,9 @@ Give a ⭐️ if you like this project! It's help a lot
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [CC BY-NC-ND](./LICENSE) licensed.
+
+This project (Rencontre Africaine / Meet-Africans) and its contents are copyrighted by DICKO Allassane and licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
