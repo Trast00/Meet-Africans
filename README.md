@@ -18,7 +18,6 @@
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
-  - [� Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
 # 📖 Rencontre Afrique <a name="about-project"></a>
@@ -132,13 +131,11 @@ Give a ⭐️ if you like this project! It's help a lot
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thank:
-- **[Twemojie](https://twemoji.twitter.com/)**: used to parse text Emojie in scalable images
-
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [CC BY-NC-ND](./LICENSE) licensed.
+
+This project (Rencontre Africaine / Meet-Africans) and its contents are copyrighted by DICKO Allassane and licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
