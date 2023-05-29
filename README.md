@@ -23,7 +23,7 @@
 
 # 📖 Rencontre Afrique <a name="about-project"></a>
 
-**Rencontre Afrique** Look no further than this dating webapp! The dashboard allows you to quickly and easily connect with new users and start chatting with potential matches. You have the ability to edit and save your profile information. The project is highly mobile-friendly. 
+**Meet African** Look no further than this dating webapp! The dashboard allows you to quickly and easily connect with new users and start chatting with potential matches. You have the ability to edit and save your profile information. The project is highly mobile-friendly. 
 
 The project have a android version.
 
