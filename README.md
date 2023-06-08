@@ -18,11 +18,12 @@
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
 # 📖 Rencontre Afrique <a name="about-project"></a>
 
-**Rencontre Afrique** Look no further than this dating webapp! The dashboard allows you to quickly and easily connect with new users and start chatting with potential matches. You have the ability to edit and save your profile information. The project is highly mobile-friendly. 
+**Meet African** Look no further than this dating webapp! The dashboard allows you to quickly and easily connect with new users and start chatting with potential matches. You have the ability to edit and save your profile information. The project is highly mobile-friendly. 
 
 The project have a android version.
 
@@ -131,11 +132,26 @@ Give a ⭐️ if you like this project! It's help a lot
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank:
+
+- **[Twemoji](https://twemoji.twitter.com/)**: is used to parse emojie text to scalable img emojie
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 📝 License <a name="license"></a>
 
 This project is [CC BY-NC-ND](./LICENSE) licensed.
 
 This project (Rencontre Africaine / Meet-Africans) and its contents are copyrighted by DICKO Allassane and licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License.
 
+<<<<<<< HEAD
+=======
+This project is [CC BY-NC-ND](./LICENSE) licensed.
+
+This project (Rencontre Africaine / Meet-Africans) and its contents are copyrighted by DICKO Allassane and licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License.
+
+>>>>>>> 08f63e8d155607fc0556c1ad5ae4026102ac7fb4
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
