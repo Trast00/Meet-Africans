@@ -3,10 +3,6 @@ import PropTypes from 'prop-types';
 import { Twemoji } from 'react-emoji-render';
 import styles from './ListEmoji.module.css';
 
-/* TODO:
-- reference Twemoji
-*/
-
 const ListEmoji = (props) => {
   const { handleAddEmoji } = props;
 
