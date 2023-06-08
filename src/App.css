@@ -94,6 +94,10 @@ a {
   display: block;
 }
 
+.hidden {
+  display: none;
+}
+
 @media screen and (min-width: 480px) {
   .desktop-only {
     display: block;

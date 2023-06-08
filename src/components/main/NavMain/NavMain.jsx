@@ -15,7 +15,7 @@ const NavMain = () => (
       <NavLink to="discover">
         <RiCompassDiscoverLine className="icons" />
       </NavLink>
-      <NavLink to="events">
+      <NavLink to="events" className='hidden'>
         <BiNews className="icons" />
       </NavLink>
       <NavLink to="chats">
