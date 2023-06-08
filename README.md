@@ -146,5 +146,12 @@ This project is [CC BY-NC-ND](./LICENSE) licensed.
 
 This project (Rencontre Africaine / Meet-Africans) and its contents are copyrighted by DICKO Allassane and licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License.
 
+<<<<<<< HEAD
+=======
+This project is [CC BY-NC-ND](./LICENSE) licensed.
+
+This project (Rencontre Africaine / Meet-Africans) and its contents are copyrighted by DICKO Allassane and licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License.
+
+>>>>>>> 08f63e8d155607fc0556c1ad5ae4026102ac7fb4
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
