@@ -52,12 +52,15 @@ The project have a android version.
 
 <details>
   <summary>Preview</summary>
+  
+  ![image](https://github.com/Trast00/Meet-Africans/assets/74411135/491c0a72-3dc5-49b9-9711-22900a26dab2)
+  
   <img src='./src/assets/previews/documentations/preview1.png', alt='preview home'>
   <img src='./src/assets/previews/documentations/previewdiscover.png', alt='preview home'>
   <img src='./src/assets/previews/documentations/previewchat.png', alt='preview home'>
   <img src='./src/assets/previews/documentations/previewprofile.png', alt='preview home'>
 </details>
-
+sdf
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
