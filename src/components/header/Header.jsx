@@ -19,8 +19,8 @@ const Header = () => {
         />
         <li className="hidden"><NavLink to="/contact" className="no-styling">Contact</NavLink></li>
         <li className="hidden"><NavLink to="/about" className="no-styling">About</NavLink></li>
-        <li><NavLink to="/auth" className="no-styling">Log In</NavLink></li>
-        <li><NavLink to="/auth" className="no-styling">Sign Up</NavLink></li>
+        <li><NavLink to="/auth/login" className="no-styling">Log In</NavLink></li>
+        <li><NavLink to="/auth/register" className="no-styling">Sign Up</NavLink></li>
       </ul>
     </header>
   );
