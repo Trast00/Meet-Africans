@@ -71,5 +71,7 @@
   .headline-wrapper main {
     color: white;
     max-width: 50%;
+    margin-left: 80px;
+    padding: 90px;
   }
 }

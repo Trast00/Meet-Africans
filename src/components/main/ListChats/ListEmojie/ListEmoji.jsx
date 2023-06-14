@@ -61,11 +61,12 @@ const ListEmoji = (props) => {
   return (
     <div className={styles.container}>
       <p className={styles.category}>List emojies:</p>
-      {categories.map((categori) => (
-        // eslint-disable-next-line react/jsx-key
-        <ul className={styles.emojis}>
-          {categori.map((emoji) => (
-            <li key={emoji}>
+      {categories.map((categori, index) => (
+        // eslint-disable-next-line react/jsx-key, react/no-array-index-key
+        <ul className={styles.emojis} key={index}>
+          {categori.map((emoji, index) => (
+            // eslint-disable-next-line react/no-array-index-key
+            <li key={(index)}>
               <Twemoji
                 text={emoji}
                 className={styles.emoji}
