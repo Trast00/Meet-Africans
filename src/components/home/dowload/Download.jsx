@@ -22,9 +22,9 @@ const Download = () => (
     </section>
     <section className="flex-center column">
       <h2 className="section-title">Start Meeting Now</h2>
-      <img src={logoColored} alt="" />
+      <img src={logoColored} alt="logo colored" />
       <p>Directly on the web site</p>
-      <Link to="/auth" className="btn-action">Sign In</Link>
+      <Link to="/auth/login" className="btn-action">Sign In</Link>
     </section>
   </div>
 );
