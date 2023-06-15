@@ -10,7 +10,15 @@ const Download = () => (
       <h2 className="section-title">Get Our Android App</h2>
       <img src={playStoreImg} alt="Download App on playStore" />
       <p>Get Notification with our android app</p>
-      <Link to="/" className="btn-action">Download</Link>
+      <a
+        href="https://play.google.com/store/apps/details?id=com.lnd.rencontreafrique&pli=1"
+        className="btn-action"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Download
+      </a>
+
     </section>
     <section className="flex-center column">
       <h2 className="section-title">Start Meeting Now</h2>
